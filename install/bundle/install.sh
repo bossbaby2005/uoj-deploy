@@ -76,7 +76,7 @@ file_put_contents('/var/www/uoj/app/.config.php', "<?php\nreturn ".str_replace('
 UOJEOF
     #Import MySQL database
     service mysql restart
-    mysql -u root --password=$_database_password_ <../db/app_uoj233.sql
+    mysql -u root --password=$_database_password_ <./app_uoj233.sql
 }
 
 setJudgeConf(){
