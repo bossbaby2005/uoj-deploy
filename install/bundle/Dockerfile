@@ -6,7 +6,7 @@ WORKDIR /opt
 RUN sed -i "s/archive.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list
 RUN apt-get update && apt-get install -y git
 #Clone the latest UOJ Community verison to local
-RUN git clone https://github.com/bossbaby2005/uoj-deploy.git uoj
+RUN git clone https://git.dev.tencent.com/bossbaby/uoj-deploy.git uoj
 #Install environment and set startup script
 RUN cd uoj/install/bundle && sh install.sh -p && echo "\
 #!/bin/sh\n\
