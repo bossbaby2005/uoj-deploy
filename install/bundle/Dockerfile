@@ -1,12 +1,12 @@
 FROM ubuntu:18.04
-MAINTAINER MascoSkray <MascoSkray@gmail.com>
-ARG CLONE_ADDFLAG
+MAINTAINER bossbaby <3064273390@qq.com>
 
 WORKDIR /opt
 #Update apt and install git
+RUN sed -i "s/archive.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list
 RUN apt-get update && apt-get install -y git
 #Clone the latest UOJ Community verison to local
-RUN git clone https://github.com/UniversalOJ/UOJ-System.git --depth 1 --single-branch ${CLONE_ADDFLAG} uoj
+RUN git clone https://github.com/bossbaby2005/uoj-deploy.git uoj
 #Install environment and set startup script
 RUN cd uoj/install/bundle && sh install.sh -p && echo "\
 #!/bin/sh\n\
