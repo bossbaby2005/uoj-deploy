@@ -11,6 +11,9 @@ If you want to replace the source list of docker and apt
 You can run the following scripts (optional)
 ```
 wget https://raw.githubusercontent.com/bossbaby2005/uoj-deploy/master/sources.sh
+```
+(or ```wget https://dev.tencent.com/u/bossbaby/p/uoj-deploy/git/raw/master/sources.sh``` in China)
+```
 sudo sh sources.sh
 ```
 Then follow the instructions:
@@ -18,6 +21,9 @@ Then follow the instructions:
 mkdir uoj
 cd uoj
 wget https://raw.githubusercontent.com/bossbaby2005/uoj-deploy/master/install.sh
+```
+(or ```wget https://dev.tencent.com/u/bossbaby/p/uoj-deploy/git/raw/master/install-cn.sh``` in China)
+```
 sh install.sh   #Then it would automatically install docker and build UOJ image
 ```
 ## Changes
